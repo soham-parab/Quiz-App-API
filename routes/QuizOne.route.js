@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-const Quiz = require("../models/QuizDB");
+const QuizOne = require("../models/QuizOne");
 
 router.get("/", async (req, res) => {
-   res.send("quizzzzzzzzzzzzzzzzzzz");
+   res.send(QuizOne);
 });
 
 module.exports = router;

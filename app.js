@@ -1,13 +1,18 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const quizRoute = require("./routes/Quiz.route");
+const quizRouteOne = require("./routes/QuizOne.route");
+const quizRouteTwo = require("./routes/QuizTwo.route");
 
 const PORT = process.env.PORT || 3500;
 
 app.use(cors());
 
-app.use("/", quizRoute);
+app.get("/", (req, res) => {
+   res.send("Hello Express app!");
+});
+app.use("/quizone", quizRouteOne);
+app.use("/quiztwo", quizRouteTwo);
 
 app.listen(PORT),
    () => {
