@@ -80,25 +80,25 @@ const quizOne = {
       },
       {
          id: uuidv4(),
-         question: "Which statements from below are true?",
+         question: "When is officially a 'Bull Market' in stocks?",
          points: 2,
          answer: [
             {
-               option: "A stock market index is a list of all the companies listed on the stock market",
+               option: "There's no official definition",
                isRight: false,
             },
             {
-               option: "Debt and Equity Mutual funds are taxed similarly since 2018",
+               option: "When a major market index hits a record new.",
                isRight: false,
             },
 
             {
-               option: "Absolute return is the most efficient way to compare returns of two investments.",
-               isRight: false,
+               option: "When a broad market index records a 20% gain from its previous low.",
+               isRight: true,
             },
             {
-               option: "Short term capital gains tax is typically higher than long term capital gains tax",
-               isRight: true,
+               option: "When the Analysts/Pundits of the major news channels announce so.",
+               isRight: false,
             },
          ],
       },
@@ -128,52 +128,29 @@ const quizOne = {
       },
       {
          id: uuidv4(),
-         question: "Out of the Equity related strategies from below, which has been known to provide the highest long term returns, time and time again?",
+         question: "A market financial situation which is characterized by the investor’s confidence, optimism and positive expectations that good results will continue is called....?",
          points: 2,
          answer: [
             {
-               option: "Buy at low price, sell at high price. Repeat diligently.",
+               option: "Bear Market",
                isRight: false,
             },
             {
-               option: "Buy stocks of a company which has gone up recently. Sell before price drops. Repeat with another such company.",
-               isRight: false,
+               option: "Bull Market",
+               isRight: true,
             },
 
             {
-               option: "Buy stocks of several good companies and wait for several years.",
-               isRight: true,
+               option: "Buyer's Market.",
+               isRight: false,
             },
             {
-               option: "Identify one great company and only invest in it every year.",
+               option: "None of the above.",
                isRight: false,
             },
          ],
       },
-      {
-         id: uuidv4(),
-         question: "An investment of 10 Lakhs in a good piece of Real Estate in India in 1998 would've grown to about 1.8 Crores by 2015. That's an 18X return over that 20 year period. If you were however unlucky enough to have put that 1 Lakh in an equity mutual fund, which had the poorest performance over the same period, how much do you suppose your return would have been? ",
-         points: 2,
-         answer: [
-            {
-               option: "Higher than real estate, around 20X.",
-               isRight: true,
-            },
-            {
-               option: "Due to 2008 market crash, 1 Lakh would've gotten reduced to 50,000. So, 5x.",
-               isRight: false,
-            },
-
-            {
-               option: "Around half of Real Estate returns, around 10X.",
-               isRight: false,
-            },
-            {
-               option: "Almost 2 times the returns of Real estate. Around 30X.",
-               isRight: false,
-            },
-         ],
-      },
+     
       {
          id: uuidv4(),
          question: "Which investment among these do you suppose has consistently provided the highest long-term returns in India?",
