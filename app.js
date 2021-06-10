@@ -6,7 +6,7 @@ const quizRouteTwo = require("./routes/QuizTwo.route");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-const PORT = process.env.PORT || 3500;
+const PORT = process.env.PORT || 3400;
 
 require("dotenv/config");
 
