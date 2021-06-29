@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
 
-const QuizSchema = mongoose.schema({
+const QuizSchema = mongoose.Schema({
   quizTopic: String,
   questions: [
     {
@@ -192,5 +192,3 @@ const quizOne = {
     },
   ],
 };
-
-module.exports = quizOne;
