@@ -3,8 +3,9 @@ const express = require("express");
 const router = express.Router();
 const Quiz = require("../models/Quiz.model");
 
-router.get("/", (req, res) => {
-  res.send("issa router get");
+router.get("/", async (req, res) => {
+  const quiz = await Quiz.find();
+  res.json(quiz.map((item) => item.quizTopic));
 });
 
 //get a quiz

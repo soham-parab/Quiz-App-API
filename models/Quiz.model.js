@@ -6,6 +6,13 @@ const QuizSchema = mongoose.Schema({
   quizTopic: String,
   questions: [
     {
+      options: [
+        {
+          answer: String,
+
+          isRight: Boolean,
+        },
+      ],
       question: String,
       correctAnswer: String,
       incorrectAnswers: Array,
