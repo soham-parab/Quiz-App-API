@@ -9,7 +9,6 @@ const QuizSchema = mongoose.Schema({
       options: [
         {
           answer: String,
-
           isRight: Boolean,
         },
       ],
